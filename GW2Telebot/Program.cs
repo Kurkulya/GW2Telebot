@@ -12,17 +12,6 @@ using System.Net;
 
 namespace GW2Telebot
 {
-
-    public class User
-    {
-
-        public string UserName { get; set; }
-
-        public string Gender { get; set; }
-
-        public string Email { get; set; }
-    }
-
     class GW2Bot
     {
         public string Token {get; private set;}
