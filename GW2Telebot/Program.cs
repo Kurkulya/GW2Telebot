@@ -6,6 +6,7 @@ using Telegram.Bot;
 using Telegram.Bot.Args;
 using Telegram.Bot.Types.Enums;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 using System.Net;
 
 namespace GW2Telebot
@@ -23,8 +24,9 @@ namespace GW2Telebot
         {
             Token = token;
             Bot = new TelegramBotClient(Token);
-            var me = Bot.GetMeAsync().Result;
-            Console.Title = me.Username;
+            //var me = Bot.GetMeAsync().Result;
+            //Console.Title = me.Username;
+            Console.Title = "GW2 Bot";
             chatId_Vlad = 399144661;
             chatId_Yarik = 284343759;
             commands = new Dictionary<string, string>();
