@@ -23,7 +23,8 @@ namespace GW2Telebot
         {
             Token = token;
             Bot = new TelegramBotClient(Token);
-            Console.Title = "GW2 Bot";
+            var me = Bot.GetMeAsync().Result;
+            Console.Title = me.Username;
             chatId_Vlad = 399144661;
             chatId_Yarik = 284343759;
             commands = new Dictionary<string, string>();
